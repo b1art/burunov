@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burunov</title>
+    <link rel="icon" href="media/blogo.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Burunov</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <box-icon name='menu'></box-icon>
+
+        <nav class="bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Arthur Burunov</h1>
+            <h3>and I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis, corporis doloremque eaque eius minima neque nihil sit.</p>
+        </div>
+        <div class="home-img">
+            <img src="media/dallas.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="media/dallas.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Accusamus ad aliquid cumque doloremque et ex illum in itaque laborum nulla pariatur, quidem repudiandae soluta sunt,
+                veritatis vero voluptates voluptatibus. 
+                Accusamus adipisci at beatae dolor eligendi ex natus suscipit tenetur voluptas?</p>
+            <button class="btn" id="open-about-btn">Read More</button>
+        </div>
+
+        <div class="modal" id="modal-about">
+            <div class="modal-box">
+                <button class="close-btn" id="close-modal-about-btn">
+                    <i class='bx bx-x-circle'></i>
+                </button>
+                <h2 >About <span>Me</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda at consequuntur culpa cupiditate dolore doloribus eaque eos esse exercitationem facere id ipsa iste magni maxime minima modi nesciunt nisi obcaecati, quod suscipit tempora ullam vitae voluptas voluptatibus. Alias asperiores cumque dolorem, earum eum illo maiores minima natus nesciunt nobis non odit similique voluptates! Corporis cumque debitis earum eum fugiat illo nam officia tempore ullam veritatis? Commodi cumque dicta ducimus est laudantium reiciendis sint vitae voluptatibus! Blanditiis consequatur corporis cupiditate debitis deserunt dolorem dolorum enim eos esse, fugiat fugit in, ipsum labore necessitatibus non, odio quaerat quas reprehenderit soluta voluptatem?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+        <h2 class="heading">My <span>Hobbies</span></h2>
+
+        <div class="hobbies-container">
+            <div class="hobbies-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Game development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, vel!</p>
+                <button class="btn" id="open-dev-btn">Read More</button>
+            </div>
+
+            <div class="modal hobbies" id="modal-dev">
+            <div class="modal-box">
+                <button class="close-btn" id="close-modal-dev-btn">
+                    <i class='bx bx-x-circle'></i>
+                </button>
+                <h2 >Game <span>Development</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda at consequuntur culpa cupiditate dolore doloribus eaque eos esse exercitationem facere id ipsa iste magni maxime minima modi nesciunt nisi obcaecati, quod suscipit tempora ullam vitae voluptas voluptatibus. Alias asperiores cumque dolorem, earum eum illo maiores minima natus nesciunt nobis non odit similique voluptates! Corporis cumque debitis earum eum fugiat illo nam officia tempore ullam veritatis? Commodi cumque dicta ducimus est laudantium reiciendis sint vitae voluptatibus! Blanditiis consequatur corporis cupiditate debitis deserunt dolorem dolorum enim eos esse, fugiat fugit in, ipsum labore necessitatibus non, odio quaerat quas reprehenderit soluta voluptatem?</p>
+            </div>
+            </div>
+
+            <div class="hobbies-box">
+                <i class="bx bx-tv"></i>
+                <h3>Anime/Manga</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, vel!</p>
+                <button class="btn" id="open-anime-btn">Read More</button>
+            </div>
+
+            <div class="modal hobbies" id="modal-anime">
+            <div class="modal-box">
+                <button class="close-btn" id="close-modal-anime-btn">
+                    <i class='bx bx-x-circle'></i>
+                </button>
+                <h2 >Anime<span>/Manga</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda at consequuntur culpa cupiditate dolore doloribus eaque eos esse exercitationem facere id ipsa iste magni maxime minima modi nesciunt nisi obcaecati, quod suscipit tempora ullam vitae voluptas voluptatibus. Alias asperiores cumque dolorem, earum eum illo maiores minima natus nesciunt nobis non odit similique voluptates! Corporis cumque debitis earum eum fugiat illo nam officia tempore ullam veritatis? Commodi cumque dicta ducimus est laudantium reiciendis sint vitae voluptatibus! Blanditiis consequatur corporis cupiditate debitis deserunt dolorem dolorum enim eos esse, fugiat fugit in, ipsum labore necessitatibus non, odio quaerat quas reprehenderit soluta voluptatem?</p>
+            </div>
+            </div>
+
+            <div class="hobbies-box">
+                <i class="bx bx-joystick"></i>
+                <h3>Competitive games</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, vel!</p>
+                <button class="btn" id="open-games-btn">Read More</button>
+            </div>
+
+            <div class="modal hobbies" id="modal-games">
+            <div class="modal-box">
+                <button class="close-btn" id="close-modal-games-btn">
+                    <i class='bx bx-x-circle'></i>
+                </button>
+                <h2 >Competitive <span>Games</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda at consequuntur culpa cupiditate dolore doloribus eaque eos esse exercitationem facere id ipsa iste magni maxime minima modi nesciunt nisi obcaecati, quod suscipit tempora ullam vitae voluptas voluptatibus. Alias asperiores cumque dolorem, earum eum illo maiores minima natus nesciunt nobis non odit similique voluptates! Corporis cumque debitis earum eum fugiat illo nam officia tempore ullam veritatis? Commodi cumque dicta ducimus est laudantium reiciendis sint vitae voluptatibus! Blanditiis consequatur corporis cupiditate debitis deserunt dolorem dolorum enim eos esse, fugiat fugit in, ipsum labore necessitatibus non, odio quaerat quas reprehenderit soluta voluptatem?</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="social-container">
+            <div class="social-box">
+                <i class='bx bxl-vk' ></i>
+                <div class="social-layer">
+                    <h4>VK</h4><a href="https://vk.com/b1art" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="social-box">
+                <i class='bx bxl-telegram' ></i>
+                <div class="social-layer">
+                    <h4>Telegram</h4><a href="https://t.me/iwannaisekai" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="social-box">
+                <i class='bx bxl-steam' ></i>
+                <div class="social-layer">
+                    <h4>Steam</h4><a href="https://steamcommunity.com/id/iwannaisekai/" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="social-box">
+                <i class='bx bx-film' ></i>
+                <div class="social-layer">
+                    <h4>Shikimori</h4><a href="https://shikimori.me/harco34" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Thanks for visiting and exploring this page.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

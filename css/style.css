@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.bar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.bar a:hover,
+.bar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 2.6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+}
+
+.hobbies h2 {
+    margin-bottom: 5rem;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hobbies-container .hobbies-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
+}
+
+.hobbies-container .hobbies-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.hobbies-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.hobbies-box h3 {
+    font-size: 2.6rem;
+}
+
+.hobbies-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.contact {
+    background: var(--second-bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 5rem;
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-container .social-box {
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--second-bg-color);
+}
+
+.social-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.social-box .social-layer {
+    position: absolute;
+    border-radius: 2rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+
+}
+
+.social-box:hover .social-layer {
+    transform: translateY(0);
+}
+
+.social-layer h4{
+    font-size: 3rem;
+}
+
+.social-layer i {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+}
+
+.modal {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4, visibility 0.4;
+}
+
+.modal.hobbies {
+    margin-top: 35vh;
+}
+
+.modal.hobbies .modal-box{
+    background: var(--second-bg-color);
+}
+
+.modal-box {
+    position: relative;
+    height: 80vh;
+    max-width: 50vh;
+    padding: 3.5rem;
+    z-index: 1;
+    background: var(--bg-color);
+    transform: scale(0);
+    transition: transform 0.8s;
+    border-radius: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.modal-box h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.close-btn {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2.2rem;
+    right: 2.2rem;
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal-box{
+    transform: scale(1);
+}
