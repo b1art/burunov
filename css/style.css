@@ -398,7 +398,7 @@ span {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #menu-icon {
         display: block;
     }
@@ -413,6 +413,10 @@ span {
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
+    }
+
+    .header {
+        justify-content: space-between;
     }
 
     .bar.active {
