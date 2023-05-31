@@ -296,7 +296,10 @@ span {
 }
 
 .modal {
-    position: absolute;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100vh;
     height: 100vh;
     z-index: 100;
@@ -306,11 +309,8 @@ span {
     overflow-y: auto;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.4, visibility 0.4;
-}
-
-.modal.hobbies {
-    margin-top: 35vh;
+    transition: opacity 0.4s, visibility 0.4s;
+    overflow-y: initial;
 }
 
 .modal.hobbies .modal-box{
@@ -328,6 +328,7 @@ span {
     transition: transform 0.8s;
     border-radius: 2.5rem;
     font-size: 2.5rem;
+    overflow-y: auto;
 }
 
 .modal-box h2 {
