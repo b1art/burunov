@@ -1,0 +1,80 @@
+.bar a:hover,
+.bar a.surveyactive {
+    color: var(--main-color);
+}
+
+section {
+   padding: 10rem 40% 2rem 0;
+   width:100%;
+   display: flex;
+   justify-content: center;
+}
+
+.quiz {
+    padding-top: 10%;
+}
+
+.quiz-questions ,
+.quiz-indicator,
+.quiz-results {
+    margin-bottom: 20px;
+}
+
+.quiz-questions-item_question,
+.quiz-results-item_question {
+    margin-bottom: 2.7rem;
+    font-size: 4.5rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+label,
+.answer-input {
+	cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+}
+
+button {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+span {
+    font-size: 1.7rem;
+    margin-left: 1rem;
+}
+
+.btn-next {
+
+}
+
+.btn-restart {
+    display: none;
+}
+
+.questions--hidden,
+.indicator--hidden,
+.btn-next--hidden {
+    display: none;
+}
+
+.btn-restart--visible,
+.indicator--visible {
+    display: block;
+}
+
+.answer--invalid {
+    color: red;
+}
+
+.answer--valid {
+    color: green;
+}

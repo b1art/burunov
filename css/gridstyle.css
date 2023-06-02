@@ -1,0 +1,77 @@
+.bar a:hover,
+.bar a.gridactive {
+    color: var(--main-color);
+}
+
+.container {
+   min-height: 100vh;
+   padding: 10rem 9% 2rem;
+   display: grid;
+   grid-gap: 1rem;
+   grid-template-areas:
+            'header header'
+            'sidebar content';
+   grid-template-columns: 1.4fr 10fr;
+   grid-template-rows: 90px 1fr;
+}
+
+.grid-header {
+    grid-area: header;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    font-size: 1.5rem;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+.grid-content {
+    grid-area: content;
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr) 9fr;
+    grid-gap: 1rem;
+}
+
+.new10 {
+    grid-column: 1/4;
+}
+
+.item {
+    border: 1px solid var(--main-color);
+    border-radius: 1rem;
+    color: var(--text-color);
+    padding: 1.7rem;
+}
+
+@media (max-width: 1200px) {
+    .grid-header {
+        font-size: 3rem;
+    }
+    .grid-content {
+        font-size: 2rem;
+    }
+    .grid-sidebar {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-header {
+        font-size: 2rem;
+    }
+    .grid-content {
+        font-size: 1.5rem;
+    }
+    .grid-sidebar {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/surveystyle.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Burunov</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="bar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#hobbies">Hobbies</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="game.html">Game</a>
+            <a href="grid.html">Grid</a>
+            <a href="survey.html" class="surveyactive">Survey</a>
+        </nav>
+    </header>
+
+    <section class="survey">
+        <div class="quiz" id="quiz">
+            <div class="quiz-questions" id="questions"></div>
+            <div class="quiz-indicator" id="indicator"></div>
+            <div class="quiz-result" id="results"></div>
+            <div class="quiz-controls">
+                <button class="btn-next" id="btn-next" disabled>Next</button>
+                <button class="btn-restart" id="btn-restart">Restart</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/surveyscript.js"></script>
+</body>
+</html>

@@ -26,7 +26,7 @@ export default async function main () {
     const state = new Text ({
         x: atlas.maze.width * scale + 15,
         y: 50,
-        content: "0 очков",
+        content: "0 points",
         fill: "yellow",
     })
 
@@ -195,7 +195,7 @@ export default async function main () {
                             x: atlas.maze.width / 2 * scale,
                             y: ((atlas.maze.height / 2) - 5) * scale,
                             align: "center",
-                            content: "Игра окончена, нажмите F5 для перезапуска!"
+                            content: "Game over, F5 to try again!"
                         })
                         party.add(over)
                         }
